@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+body {
+    background-color: #006400;
+    font-family: Arial, sans-serif;
+}
+</style>
+<body>
+    <div class="w3-container">
+        <center>
+        <img src="css/Valorant.jpeg" width=1300px height=450px>
+    </div>
+
+    <div class="w3-bar w3-pink">
+        <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Senjata')">Vandal</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Phantom')">Phantom</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Sheriff')">Sheriff</button>
+    </div>
+
+    <div id="Profile" class="w3-container kota w3-animate-bottom" style="display:none">
+        <center>
+            <img src="css/Hanni.jpeg" width=10%>
+            <h2>Tierry Henry Hasiholan</h2>
+            <p>Mahasiswa</p>
+            <p>NIm   : 10123152<br>
+               Kelas : IF-4
+            </p>
+        </center>
+    </div>
+
+    <div id="Senjata" class="w3-container kota w3-animate-bottom" style="display:none">
+        <center>
+		
+            <img src="css/Vandal.jpeg" width=30%>
+            <h3>Damage,
+					Ke kepala: 160
+					Ke Badan: 40
+					Ke Kaki: 34
+				
+				<p>Range: 0-50m</p>
+				<p>Fire mode: Auto</p>
+				<p>Fire rate: 9,75rds/sec – 585rds/min</p>
+				<p>Run speed: 5,4m/sec</p>
+				<p>Equip speed: 1 sec</p>
+				<p>Reload speed: 2,5 sec</p>
+				<p>Magazine: 25/50 (2 magazines)</p>
+				<p>Wall penetration: Medium</p>
+				<p>Dari statistik di atas bisa dilihat bahwa Vandal Valorant memiliki atribut serang yang sangat baik sebagai Assault Rifle di Valorant.
+
+				Fire Rate dapat dimaknai sebagai kecepatan peluru ketika ditembakkan menuju ke arah objek. Run Speed adalah kecepatan membawa senjata di dalam permainan. Equip speed adalah waktu yang digunakan saat mengeluarkan dan memakai senjata.
+
+				Reload speed terkait dengan kecepatan proses isi ulang peluru senjata. Magazine adalah kapasitas peluru dalam senjata dan Wall Penetration adalah ukuran seberapa baik Vandal ditembakkan menembus sebuah objek (tembok/kotak/objek lainnya).</p>
+
+</h3>
+        </div>
+        <div id="Phantom" class="w3-container kota w3-animate-bottom" style="display:none">
+            <center>
+                <img src="css/Phantom.jpeg" width=30%>
+                <h3>Phantom adalah senapan otomatis berbiaya tinggi. Salah satu senjata serba guna terbaik di VALORANT , senjata ini paling efektif dalam jarak pendek hingga menengah karena mampu menghabisi banyak musuh sekaligus karena laju tembakannya yang tinggi. Ia juga dilengkapi dengan peredam, memungkinkannya digunakan untuk mengirim spam melalui penghalang penglihatan tanpa banyak risiko terhadap jumlah amunisi atau posisi pemain.
+
+					<p>Phantom mampu membunuh musuh secara instan hanya dengan satu headshot, namun damage yang berkurang membuat hal ini tidak lagi terjadi pada jarak menengah dan jauh. Pemain yang melakukan headshot awal tetapi gagal melakukan tembakan mematikan kedua sebelum mereka mati mungkin menganggap Vandal lebih disukai dalam situasi seperti itu.</p></h3>
+            </center>
+        </div>
+
+        <div id="Sheriff" class="w3-container kota w3-animate-bottom" style="display:none">
+            <center>
+                <img src="css/Sheriff.jpeg" width=30%>
+                <h3>Sheriff adalah pistol semi-otomatis dan pistol paling mahal di dalam game. Mampu membunuh musuh dengan satu peluru di kepala pada jarak paling jauh dan total kesehatan, dapat digunakan untuk menantang bahkan musuh yang sudah membeli penuh. Penetrasinya yang tinggi dan magasin cadangan ekstra juga membuatnya berguna untuk melakukan spamming pada wallbang selama putaran pistol atau eco. Namun, dengan magasin berkapasitas rendah dan laju tembakan rendah, bahkan satu tembakan yang meleset pun bisa berakibat fatal. Recoil dan spread Sheriff yang tinggi juga meningkatkan kontrol dan presisi yang luar biasa untuk digunakan saat melawan banyak musuh</h3>
+            </center>
+        </div>
+
+    <script>
+	function openKota(namakota) {
+		var i;
+		var x = document.getElementsByClassName("kota");
+		  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none"; 
+		}
+		document.getElementById(namakota).style.display = "block"; 
+		}
+	</script>
